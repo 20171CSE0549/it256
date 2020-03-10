@@ -1,0 +1,34 @@
+<html>
+<head>
+<style>
+p{
+display:block;
+background-color:red;
+padding:20px;
+}
+div:hover p{
+display:block;
+}
+p::first-line{
+color:#ff0000;
+font-size:small-caps;
+}
+p#menu::first-letter{
+color:#ff0000;
+font-size:xx-large;
+}
+h1::before{
+content:"->";
+}
+::selection{
+color:red;
+background:yellow;
+}
+</style>
+</head>
+<body>
+<p>you can use the::first-line pseudo-element to add a special effect</p>
+<p id="menu">you can use the::first letter pseudo-element to add a span</p>
+<h1>this is a heading</h1>
+</body>
+</html>
